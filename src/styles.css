@@ -1,0 +1,25 @@
+.container {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  .text-field {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .word-count {
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  @media (max-width: 576px) {
+    .text-field {
+      font-size: 14px;
+    }
+  }
+  

@@ -1,16 +1,62 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
-
-* {
-  margin: 0;
-  padding: 0;
-  font-family: "Montserrat", sans-serif;
+.color-picker {
+  width: 800px;
+  height: 800px;
+  border: 1px solid black;
+  box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.5);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-body {
-  height: 100vh;
+.selected-color {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  border: 1px solid black;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #fbb034;
-  background-image: linear-gradient(315deg, #fbb034 0%, #ffdd00 74%);
+  position: relative;
+}
+
+.pick-color-button {
+  width: 100%;
+  height: 50px;
+  background-color: white;
+  border: 1px solid black;
+  cursor: pointer;
+  font-size: 16px;
+  text-align: center;
+}
+
+.color-palette {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  background-color: white;
+  border: 1px solid black;
+  box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.5);
+  
+}
+
+.selected-color:active .color-palette {
+  visibility: visible;
+}
+
+.color-palette li {
+  width: 20px;
+  height: 20px;
+  margin: 5px;
+  cursor: pointer;
 }
